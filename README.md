@@ -2,7 +2,7 @@
 
 ##### Hello and welcome to my final game project developed for the final assignment of the module Intro to Programming I !
 
-The game consist in a basic 2D side-scrolling game, based on the japanese cartoon charachter Doraemon, which was designed using p5.js drawing library.
+The game is developed entirely with vanilla Javascript using the P5.js library, and consist in a basic 2D side-scrolling game, based on the Japanese cartoon character Doraemon, which was designed using p5.js drawing library.
 
 The game contains all the extensions required by the review criteria and for which are provided course’s lectures, which are:
 

@@ -152,13 +152,13 @@ function startGame() {
   };
 
   platforms = [];
-  //PUSHING PLATFORMS into platforms
+  //PUSHING platforms into platforms array
   platforms.push(createPlatforms(450, 350, 200));
   platforms.push(createPlatforms(650, 290, 200));
   platforms.push(create_Moving_Platforms(850, 230, 100, 20));
 
   enemies = [];
-  //PUSHING enemy into enemies
+  //PUSHING enemy into enemies array
   enemies.push(new Enemy(400, floorPos_y, 200));
   enemies.push(new Enemy(740, floorPos_y, 200));
   enemies.push(new Enemy(650, 290, 200, 200));
@@ -167,7 +167,7 @@ function startGame() {
 function draw() {
   background(251, 206, 177); //fill the sky
 
-  //SUN
+  //Draw Sun
   stroke(207, 182, 59);
   strokeWeight(5);
   fill(255, 215, 0);
@@ -193,15 +193,12 @@ function draw() {
   }
 
   //Draw Ground
-
   drawGround();
 
   // Draw trees.
-
   drawTrees();
 
   // Draw collectable items.
-
   for (var i = 0; i < collectables.length; i++) {
     if (!collectables[i].isFound) {
       drawCollectable(collectables[i]);
@@ -210,16 +207,17 @@ function draw() {
   }
 
   //draw Platforms
-
   for (var i = 0; i < platforms.length; i++) {
     platforms[i].draw();
   }
 
+  // Draw flagpole
   renderFlagpole();
 
+  // Draw enemies
   for (var i = 0; i < enemies.length; i++) {
     enemies[i].draw();
-
+    // Check enemy collision detection
     enemyContact = enemies[i].checkContact(gameChar_world_x, Doraemon.pos_y);
     checkPlayerDie();
   }
@@ -227,12 +225,11 @@ function draw() {
   pop();
 
   // Draw game character.
-
   drawGameChar();
   checkPlayerDie();
 
   //SCOREBOARD
-  //LIVES
+  //Lives
   for (var i = 0; i < lives; i++) {
     scoreBoard(200 + i * 50, 90);
   }
@@ -399,7 +396,6 @@ function keyReleased() {
 
 function drawGameChar() {
   // draw game character
-
   if (isLeft && (isFalling || isPlummeting)) {
     // jumping-left code
     //FEET
