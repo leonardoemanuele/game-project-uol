@@ -1,59 +1,22 @@
-### The Game Project – Adding game mechanics
+### The Game Project - University of London, Intro to Programming I
 
-This week’s project builds upon the sketch from last week. Before
-starting this project make sure you have completed all steps from last
-week and tested your game thoroughly.
+##### Hello and welcome to my final game project developed for the final assignment of the module Intro to Programming I !
 
-Create a copy of your sketch directory from last week and rename it to
-something like `game-project-6`. Keep your completed project from last
-week safe as a reference, and make the following changes to the code
-in your new game directory.
+The game consist in a basic 2D side-scrolling game, based on the japanese cartoon charachter Doraemon, which was designed using p5.js drawing library.
 
-1. Add a score counter
+The game contains all the extensions required by the review criteria and for which are provided course’s lectures, which are:
 
-   - create a global variable called `game_score`
-   - increment `game_score` by one each time the character collects an item.
-   - use the text function to draw the score on the screen.
+- Sounds (Edited and Mixed with Logic Pro X)
+- ​Enemies (Basic enemies moving back and forth)
+- Platforms (Fixed and moving platforms)
 
-2. Add a flagpole
+Although its a simply project with really basic functionalities and simple design as a videogame can be, I have been focusing mainly on delivering a final result as much polished as possible, working to make it graphic appealing and altogether fully functional in all its extensions.
 
-   - We need to add an end to your level. I have chosen a flagpole but you can chose according to the theme of your game.
-   - Initialise an object called `flagpole`, it should at least have the properties `x_pos` and `isReached`.
-   - set `isReached` to `false` and `x_pos` to a world position at the very end of your level.
-   - create a function called `renderFlagpole` and call this from the draw function
-   - complete the function to draw your flagpole in two states. One for when `isReached` is false,
-     and one for when it is `true`
+As a first time programming project, I am satisfied with this first version, and in future I will improve the level design with the scope of implementing more complex functions, adding more detailed graphics in order to make it looks more similar to a real video game.
 
-3. Flagpole checking function
+The things I enjoyed the most:
 
-   - create a function called `checkFlagpole`
-   - call the function from `draw`, but write a conditional so that `checkFlagpole` is only called when `flagpole.isReached` is `false`
-   - in `checkFlagpole` write a conditional such that when the gameChar is in range of the flagpole
-     its `isReached` property is set to `true`
-
-4. Add lives
-
-   - Your character should begin with three lives, and each time they fall down a canyon the game
-     should reset and their remaining lives decrement by one.
-   - Create a global variable `lives`, and initialise it to `3` within `setup`.
-   - Create a function called `checkPlayerDie`. Call this within draw.
-   - In this function define a conditional statement that tests if your character has fallen below
-     the bottom of the canvas. When this is `true`, decrement the `lives` counter by one
-   - Create a new function called `startGame()`.
-   - Move everything from `setup` except `createCanvas` and the initialisation of `floorPos_y` and
-     `lives` into this new function.
-   - At the end of your now very short `setup` function call `startGame()`.
-   - In `checkPlayerDie` create a conditional statement to test if the player has
-     used all of their lives. If there are lives remaining call `startGame`.
-   - Write some code using a `for` loop to draw life tokens onto the screen so that you
-     can keep track of how many lives you have remaining.
-
-5. "Game over" and "Level complete" text
-   - In the draw loop, after your drawing code and before your game logic
-     code, write two conditional statements
-   - The first displays "Game over. Press space to continue."
-     when `lives` is less than 1.
-   - The other displays "Level complete. Press space to continue." when
-     `flagpole.isReached` is true
-   - For each conditional you should return at the end of the statement. This
-     prevents any further game logic from happening when play is over.
+- Learning how to program the main basic logics and functionalities behind a videogame project;
+- Using different technics and methods to better implement each of the extension that are implemented in the entire program;
+- Developing and building a critical thinking to deal with debugging code, and learn to accept and overcome, first looking difficult task or challenges;
+- Implementing sounds for each interaction, such as background music, collectibles sound, enemy sounds, etc.
