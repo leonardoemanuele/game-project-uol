@@ -1,4 +1,4 @@
-### The Game Project - University of London, Intro to Programming I
+### The Game Project - University of London, Intro to Programming I, April 2021 - September 2021
 
 ##### Hello and welcome to my final game project developed for the final assignment of the module Intro to Programming I !
 
@@ -7,7 +7,7 @@ The game is developed entirely with vanilla Javascript using the P5.js library, 
 The game contains all the extensions required by the review criteria and for which are provided course’s lectures, which are:
 
 - Sounds (Edited and Mixed with Logic Pro X)
-- ​Enemies (Basic enemies moving back and forth)
+- Enemies (Basic enemies moving back and forth)
 - Platforms (Fixed and moving platforms)
 
 Although its a simply project with really basic functionalities and simple design as a videogame can be, I have been focusing mainly on delivering a final result as much polished as possible, working to make it graphic appealing and altogether fully functional in all its extensions.
